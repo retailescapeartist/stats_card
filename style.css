@@ -1,0 +1,107 @@
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: white;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+body {
+    background-color: hsl(233, 47%, 7%);
+}
+
+.container {
+    height: 446px;
+    width: 540px;
+    background: hsl(244, 38%, 16%);
+    display: flex;
+    border-radius: 20px;
+    transform: translate(-200px,50%);
+    margin: auto;
+}
+
+
+.information span {
+    color: hsl(277, 64%, 61%);
+}
+
+.information h1 {
+    color: white;
+}
+
+
+.information p {
+    color: hsla(0, 0%, 100%, 0.75);
+    width: 540px;
+}
+
+.information table {
+    margin-top: 100px;
+}
+
+.information table th, td {
+    padding: 5px;
+}
+
+.information table td {
+    color: hsl(0, 0%, 100%);
+    font-family: inter;
+    font-weight: 700;
+}
+
+.information table th {
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.6);
+}
+
+.image_background {
+    background-image: url("images/image-header-desktop.jpg");
+    height: 446px;
+    width: 540px;
+    border-radius: 20px;
+    transform: translate(500px, -320px);
+    position: relative;
+}
+
+.image_background:after {
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-color: hsl(277, 64%, 61%);
+    mix-blend-mode: multiply;
+    border-radius: 20px;
+    position: absolute;
+}
+
+@media only screen and (max-width:  375px) {
+
+    .image_background {
+        width: 375px;
+        transform: translate(-10px, -780px);
+    }
+
+    .container {
+        width: 360px;
+        background: hsl(244, 38%, 16%);
+        display: flex;
+        border-radius: 20px;
+        transform: translate(-2px,435px);
+    }
+
+    .attribution {
+        transform: translate(0px, 500px);
+    }
+
+    .information h1 {
+        color: white;
+        width: 300px;
+    }
+
+
+    .information p {
+        color: hsla(0, 0%, 100%, 0.75);
+        width: 300px;
+    }
+}
